@@ -175,9 +175,11 @@ public class A_EntityLifeCycleTests {
         Assertions.assertEquals("달콤 꿀밤", mergeMenu.getMenuName());
     }
 
+    // merge를 할때는 준영속 상태일때만 가능
     @Test
     void 병합_merge_삽입_테스트(){
         Menu menuToDetach = entityManager.find(Menu.class, 2);
+        // 준영속
         entityManager.detach(menuToDetach);
 
         menuToDetach.setMenuCode(999);
