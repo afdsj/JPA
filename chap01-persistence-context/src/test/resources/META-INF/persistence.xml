@@ -9,8 +9,8 @@
             <property name="javax.persistence.jdbc.user" value="myjpa"/>
             <property name="javax.persistence.jdbc.password" value="root"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/menudb"/>
-            <property name="hibernate.show_sql" value="true"/>
-            <property name="hibernate.format_sql" value="true"/> <!-- 보기 좋게 정렬해줌-->
+            <property name="hibernate.show_sql" value="true"/> <!-- 쿼리를 보여줌-->
+            <property name="hibernate.format_sql" value="true"/> <!-- sql을 보기 좋게 정렬해줌-->
 
         </properties>
     </persistence-unit>

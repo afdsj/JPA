@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.2">
+    <persistence-unit name="jpatest">
+<!--        <class>com.ohgiraffers.section01.entity.Member</class>-->
+<!--        <class>com.ohgiraffers.section02.column.Member</class>-->
+<!--        <class>com.ohgiraffers.section03.primarykey.identity.Member</class>-->
+<!--        <class>com.ohgiraffers.section03.primarykey.tables.Member</class>-->
+<!--        <class>com.ohgiraffers.section04.enumtype.Member</class>-->
+<!--        <class>com.ohgiraffers.section05.access.subsection01.filed.Member</class>-->
+<!--        <class>com.ohgiraffers.section05.access.subsection02.property.Member</class>-->
+<!--        <class>com.ohgiraffers.section06.compositekey.subsection01.embedded.Member</class>-->
+        <class>com.ohgiraffers.section06.compositekey.subsection02.idclass.Member</class>
+        <properties>
+            <!--DB Connection의 관련된 설정-->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="myjpa"/>
+            <property name="javax.persistence.jdbc.password" value="root"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/menudb"/>
+            <!--Hibernate의 관련된 설정-->
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/> <!--create로 해두면 실행 할때마다 db 생성-->
+        </properties>
+    </persistence-unit>
+</persistence>
