@@ -9,7 +9,7 @@ public class Member {
 
     @Id
     @Column(name = "member_no")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO) // @GeneratedValue : 기본키 생성을 데이터베이스에게 위임하는 방식
     private int memberNo;
 
     @Column(name = "member_id", length = 10)

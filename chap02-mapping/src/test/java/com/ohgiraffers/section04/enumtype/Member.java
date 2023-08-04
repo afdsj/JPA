@@ -34,7 +34,7 @@ public class Member {
     private String address;
 
     @Column(name = "enroll_date")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.TIMESTAMP) // TIMESTAMP : 날짜와 시간 같이 보여줌
     private Date enrollDate;
 
     @Column(name = "member_role")
